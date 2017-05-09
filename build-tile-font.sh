@@ -48,3 +48,6 @@ cp pie.map $TEXDIR/fonts/map/dvips/piemf/
 mktexlsr
 
 updmap-sys --enable Map=pie.map
+
+cd -
+rm -rf "$TEMPDIR"
