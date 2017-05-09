@@ -1,0 +1,6 @@
+To generate the book:
+
+/!\ Requires Docker /!\
+
+sudo make
+sudo make book
