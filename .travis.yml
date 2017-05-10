@@ -1,0 +1,15 @@
+sudo: required
+services:
+- docker
+before_install:
+- sudo make
+script:
+- sudo make book
+deploy:
+  provider: releases
+  api_key:
+    secure: SYdioLSGMWKpkY0gFYWE9F7NAk52SYYjGBahgaQl5rGZmse98RtCSR70M5XjOmUBV1YeNAcgT6vNp3TH2XDc5K5AuR14Q17zc7QAWmRlAXJ1NRmULli4ajOf31OGyqxE8y41BYC4ufTufouLPzYQvDK7Yx7Mp3sGdTBhu+rH0JNhhl/OOZdy5AQFso32mc1b8lXmcD57r0gmV2oyBXy48zrTLsq34S7voAcZl+SyU+1jOOnVqS1GIqdH4vXOdyD2xyPpZuHqbG8eyJcsiOrKNrqLB3Gh1enUjeoSTDwNZDEgj0lwwLZixcsqxSA1Wu8eZIXL71KGLkL93qXF5JXyQN73SGUoJiNMh6QjZBOo2CPgwGNjaBZCO+ibjSl3wFFBnet7oSjpE8RjdXof7tOthYJ+98jpyPp645FIzK02AOy9xGby9lncsLeTvv6YYuKhffGsGEneEpF8kXTiMSGAPWzN84tAEaUDrP/Zgn7YcIvJEnWYZRhsGABPNmwxViJZZfoXf+Eqo2qTj43CMKQtAm/Pkr2hjbpm8Nh3FhJo4JU75VfDT1+HOGxj9Hul4PFQmp/uh3sW/S77sG5BuR+I3NduqmIIVmk8viIc7D9Vs1m2Teb7F55BsiIz7s092rOTKhx84TeWy9vt+H4t7iN4RY8RKIzwT89/d8wR4BcBt+I=
+  file: "./book/RiichiBook1.pdf"
+  on:
+    repo: loopfz/riichi-book-1
+    branch: master
