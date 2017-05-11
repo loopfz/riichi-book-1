@@ -7,12 +7,9 @@ MAIN_FILE			=	RiichiBook1
 LATEX_FILES			=	${SRC_FOLDER}/*.tex
 TARGET				=	${SRC_FOLDER}/${MAIN_FILE}.pdf
 
-DOCKER_IMAGE		=	loopfz/riichi
+DOCKER_IMAGE		=	loopfz/riichi-latex
 
-all: build
-
-build:
-	@docker build --tag=${DOCKER_IMAGE}:latest .
+all:		book
 
 book:		${TARGET}
 
