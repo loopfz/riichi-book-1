@@ -1,6 +1,43 @@
-To generate the book:
+This project is an ongoing french translation of the wonderful
+japanese mahjong (riichi) strategy ebook written by Daina Chiba.
 
+Original ebook: http://riichi.dynaman.net
+
+------------------------------------------------------------------------------
+
+ATTENTION FRENCH SPEAKERS :
+
+ON ACCEPTE LES CONTRIBUTIONS :)
+
+L'ebook est écrit en Latex, et utilise des packages assez exotiques notamment
+pour afficher les tuiles de mahjong, ce qui le rend complexe à compiler.
+
+Cependant, nous avons automatisé autant que possible le processus, et le PDF
+de l'ebook est automatiquement re-généré à chaque pull request acceptée,
+puis uploadé dans la section releases.
+
+Vous n'avez pas besoin de connaître Latex pour participer !
+
+------------------------------------------------------------------------------
+
+To manually generate the book under Linux:
 /!\ Requires Docker /!\
 
 sudo make
-sudo make book
+
+------------------------------------------------------------------------------
+
+IF YOU ARE INTERESTED IN PURSUING A TRANSLATION PROJECT IN ANOTHER LANGUAGE
+
+You may reuse our tech however you want !
+
+Things of interest:
+- The custom Docker image designed to embed everything needed to build
+  the ebook (see https://github.com/loopfz/riichi-latex )
+- The patches done in book/RiichiBook1.tex for compatibility with lualatex
+- The .travis.yml file that automatizes the PDF build, using the Docker image
+
+It should be very easy to set up everything in another repository,
+do not hesitate to contact me for help:
+
+    loopfz@gmail.com
