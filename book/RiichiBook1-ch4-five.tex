@@ -5,47 +5,46 @@
 \chapter{La méthode des cinq blocs} \label{ch:five}
 \thispagestyle{empty}
 
-In introducing basic building blocks of riichi mahjong in the previous chapter, I have also touched upon a number of important tile efficiency principles ---
-e.g., superiority of side-wait protoruns, the value of having two pairs in a hand rather than three, and the value of stretched single or bulging float shapes, to name a few. 
+En introduisant les essentiels de base du mah-jong japonais au chapitre précédent, j'ai aussi touché sur un nombre de principes importants d'efficacité des tuiles --- p.ex., la supériorité des protosuites à deux bords, la valeur de posséder deux paires au lieu de trois, et la valeur des formes étirées et termeXXXnakabukure, pour en nommer quelques uns. 
 
 \bigskip
-These principles are all important, but trying to take all of the important principles into consideration at once could be a daunting task. We have to make our discard choice in a limited amount of time,\footnote{Recall that, on regular (slower) tables on {\jap Tenhou}, each discard choice must be made within 5 seconds. In offline games, we should make choices even faster so as not to irritate your fellow players.} and tile efficiency is not the only factor we need to consider in making a discard choice. 
-Moreover, some of the tile efficiency principles can at times clash with one another, requiring us to make a judgement call about which principle to follow. For example, we may at times wonder whether to retain a bulging float shape or to retain two pairs in a hand, when we have to discard one of the two. 
+Ces principes sont tous importants, mais essayer de les prendre tous ces principes importants d'un coup peut être vue comme une tâche ardue. Il faut choisir notre écart voulu dans un temps limité,\footnote{Un rappel que sur les tables régulières (lentes) sur {\jap Tenhou}, chaque choix d'écart doit être fait dans les 5 secondes. Hors ligne, nous devons nous forcer à faire des choix encore plus vite afin de ne pas irriter ses adversaires.} et l'efficacité des tuiles n'est pas le seul facteur que nous devons considérer en faisant un choix d'écart. 
+De plus, certains des principes d'efficacité des tuiles peuvent parfois s'opposer mutuellement, nous exigeant de porter un jugement sur quel principe suivre. Par exemple, on peut parfois se demander si on doit garder une forme termeXXXnakabukure ou de retenir deux paires dans une main alors que nous devons en écarter une des deux. 
 
 \bigskip
-The {\bf five-block method} I introduce in this chapter will help us prioritize between competing principles and find the most efficient discard choice quickly.\footnote{As I mentioned in the Preface, the exposition of this chapter is based on Makoto Fukuchi's books. In particular, I am indebted to Makoto Fukuchi 2015 \textit{Haikouritsu Nyumon Doriru 76}, Yousensha. ISBN978-4-8003-0634-0.}
-The core idea of the five-block method is deceptively simple; we first identify five tile blocks in a hand --- four groups + one head, or their candidates --- and try to complete each block. 
+La {\bf méthode des cinq blocs} que je vais introduire dans ce chapitre nous aidera à prioriser entre des principes qui s'opposent et de trouver l'écart la plus efficace rapidement.\footnote{Comme j'ai mentionné dans la préface, la démonstration du contenu de ce chapitre est basé sur les livres de Makoto Fukuchi, dont comme source principale : [citation] Makoto Fukuchi 2015 \textit{Haikouritsu Nyumon Doriru 76}, Yousensha. ISBN978-4-8003-0634-0.}
+L'idée essentielle de la méthode des cinq blocs paraît de ce qu'il y a de plus simple; nous identifions d'abord cinq blocs dans une main --- quatre groupes et la paire finale, ou leurs candidats --- et essayer de compléter chaque bloc. 
 \index{Fukuchi@Fukuchi, Makoto}
 
-\section{Finding a redundant tile} 
+\section{Trouver une tuile redondante} 
 	\index{five-block method}
 
-We all understand that a standard hand
+Nous comprenons tous qu'une main standard
 %\footnote{Of course, non-standard hands --- {\jap chiitoitsu} (Seven pairs) and {\jap kokushimusou} (Thirteen Orphans) --- are exceptions.} 
-must have five blocks of tiles --- four groups and one head --- to win. 
-The five-block method encourages us to be always conscious about five tile blocks in a hand. 
-Consider the following hand. What would you discard and why?
+doit avoir cinq blocs de tuiles --- quatre groupes et la paire finale --- pour gagner. 
+La méthode des cinq blocs nous encourage à toujours être vigilants de compter et viser un total de 5 blocs.
+Considérez la main suivante. termeXXXwwyd et pourquoi?
 
 \bp
 \wan{5}\wan{5}\wan{7}\wan{8}\tong{2}\tong{4}\tong{5}\tong{5}\suo{1}\suo{3}\suo{3}\zhong\zhong\zhong
 \ep
 
-To figure out which tile is the least useful in this hand, let's divide the hand into tile blocks, as follows. 
+Pour déterminer quelle tuile est la moins utile dans cette main, divisons la main en blocs de tuiles, comme suit. 
 \bmj{\Huge
 $
 \underbrace{\text{\wan{5}\wan{5}}}
 \underbrace{\text{\wan{7}\wan{8}}}\underbrace{\text{\tong{2}\tong{4}\tong{5}\tong{5}}}\underbrace{\text{\suo{1}\suo{3}\suo{3}}}\underbrace{\text{\zhong\zhong\zhong}} \label{five:411a}
 $
 }\emj
-Notice that, although we do not know which block is going to be the head and which blocks are going to be four groups at the moment, the hand already has five tile blocks. This means that there is no need to increase or decrease the number of blocks from here. 
+Notez que malgré que nous ne savons pas quel bloc deviendra la paire finale et quels blocs formeront les quatre groupes de la main, la main forme déjà cinq blocs de tuiles. Ceci veut bien dire qu'il n'y a aucun besoin d'augmenter ni de réduire le nombre de blocs à partir d'ici. 
 
 \bigskip
-Looking at each of the five blocks, the pair of {\LARGE\wan{5}}, the protorun {\LARGE\wan{7}\wan{8}}, and the set of {\LARGE\zhong} are all self-sufficient; we keep them as they are. Our discard choice should thus be from the third or the fourth blocks, {\LARGE\tong{2}\tong{4}\tong{5}\tong{5}} or {\LARGE\suo{1}\suo{3}\suo{3}}. 
-Let's now compare these two closed-wait blocks. While {\LARGE\suo{1}} is being useful within the block it belongs to, enabling the hand to accept {\LARGE\suo{2}}, {\LARGE\tong{2}} is completely redundant; the hand can accept {\LARGE\tong{3}} without having {\LARGE\tong{2}}. Therefore, the ideal discard here is {\LARGE\tong{2}}. 
+En regardant chacun des cinq blocs, la paire de {\LARGE\wan{5}}, la protosuite {\LARGE\wan{7}\wan{8}}, et le brelan de {\LARGE\zhong} sont tous autosuffisants; on les garde tels quels. Notre choix d'écart devrait donc provenir du troisième ou du quatrième bloc, {\LARGE\tong{2}\tong{4}\tong{5}\tong{5}} or {\LARGE\suo{1}\suo{3}\suo{3}}. 
+Comparons maintenant ces blocs avec attentes fermées. Pendant que {\LARGE\suo{1}} est utile dans son propre bloc, permettant à la main d'accepter {\LARGE\suo{2}}, {\LARGE\tong{2}} demeure une redondance à part entière; la main peut accepter {\LARGE\tong{3}} sans avoir {\LARGE\tong{2}}. Alors, l'écart idéal ici est {\LARGE\tong{2}}. 
 
 \bigskip
-There are two key points to remember in applying the five-block method. 
-First, we should not make any one of the five blocks ``too weak.''\footnote{Basically, any block that is weaker than a side-wait protorun is a weak block.} In the current example, if we discard {\LARGE\suo{3}}, the {\LARGE\suo{1}\suo{3}\suo{3}} block becomes an isolated closed-wait protorun, which is too weak compared with the other blocks. Likewise, if we discard {\LARGE\suo{1}}, this block becomes a pair of {\LARGE\suo{3}}. Since this hand already has two other pairs, having a third pair makes all the pairs in the hand too weak. 
+Il y a deux points-clés à prendre en compte en appliquant la méthode des cinq blocs. 
+D'abord, nous ne devons pas rendre aucun parmi les cinq blocs «trop faibles.»\footnote{Essentiellement, tout bloc plus faible qu'une protosuite en attente ouverte est un bloc faible.} Dans cet exemple, si on écarte {\LARGE\suo{3}}, le bloc {\LARGE\suo{1}\suo{3}\suo{3}} devient une protosuite isolée à attente fermée, qui deviendrait trop faible comparé aux autres blocs. De même, si on écarte {\LARGE\suo{1}}, ce bloc deviendrait une paire de {\LARGE\suo{3}}. Puisque cette main a déjà deux autres paires, posséder une troisième paire rend toutes les paires dans la main trop faibles. 
 
 \bigskip
 Second, each of the five tile blocks should ideally have three tiles. In the current example, the {\LARGE\suo{1}\suo{3}\suo{3}} block has exactly three tiles and so we should not choose a discard from this block. On the other hand, the {\LARGE\tong{2}\tong{4}\tong{5}\tong{5}} block currently has four tiles so we should discard one from this block to make this a three-tile block. 
@@ -61,12 +60,12 @@ Identify five tile blocks in a hand. Try to make sure:
 \end{itembox}\normalcolor
 
 \newpage
-Let's see another example. 
+Voyons un autre exemple. 
 \bp
 \wan{3}\wan{5}\wan{7}\tong{4}\tong{5}\tong{6}\tong{6}\tong{7}\suo{4}\suo{6}\suo{6}\suo{8}\bai\bai~\bai\\
 \hfill\footnotesize{{\jap Dora}~~~~~~~~~~~~}
 \ep
-We can easily see that there is one block in {\jap manzu} (cracks), two blocks in {\jap pinzu} (dots), and a pair of white dragons, giving us four blocks. This means that we need to have only one more block in {\jap souzu} (bamboos). Therefore, we divide the hand as follows. 
+Nous pouvons facilement observer qu'il y a un bloc en {\jap manzu} (chiffres), deux blocs en {\jap pinzu} (sapèques), et une paire de dragons blancs, nous donnant un total de quatre blocs. This means that we need to have only one more block in {\jap souzu} (bamboos). Therefore, we divide the hand as follows. 
 
 \bmj{\Huge
 $
