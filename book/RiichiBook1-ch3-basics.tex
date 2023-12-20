@@ -174,16 +174,16 @@ Par exemple, regardons la main suivante.
 \vspace{-10pt}Que défausseriez-vous ? \vspace{-5pt}
 \end{itembox}
 \noindent
-Discarding {\LARGE\suo{9}} makes the hand 2-away, whereas discarding either {\LARGE\wan{7}} or {\LARGE\suo{4}} makes the hand 1-away. You should thus discard {\LARGE\wan{7}} or {\LARGE\suo{4}} to make the hand 1-away. 
-Reverting a 1-away hand to 2-away makes sense only in some exceptional cases where tile acceptance at 1-away becomes unbearably small (i.e., fewer than 2 kinds).
-With this hand, the hand will be able to accept {\LARGE\tong{2}\tong{5}\suo{8}} (3 kinds--12 tiles) when it becomes 1-away.
+Défausser le {\LARGE\suo{9}} rend la main 2-away, alors que défausser le {\LARGE\wan{7}} ou le {\LARGE\suo{4}} rend la main 1-away. Vous devriez donc défausser le {\LARGE\wan{7}} ou le {\LARGE\suo{4}} pour rendre la main 1-away. 
+Le passage d'une main 1-away à 2-away n'a de sens que dans certains cas exceptionnels où l'acceptation des tuiles à 1-away devient trop faible (c.-à-d. moins de 2 sortes).
+Avec cette main, la main sera capable d'accepter {\LARGE\tong{2}\tong{5}\suo{8}} (3 sortes - 12 tuiles) lorsqu'elle devient 1-away.
 
 \subsection{Les protosuites ({\jap taatsu})} \label{sec:protorun}
 	\index{protorun ({\jap taatsu})} \index{taatsu@{\jap taatsu} (protorun)}
 	\index{waits!side wait} \index{waits!closed wait} \index{waits!edge wait}
 
-Of the two kinds of groups, it is easier to complete a run than to complete a set. There are only four identical tiles, and completing a set requires that you collect three out of the four identical tiles. 
-Therefore, we usually prioritize runs over sets in advancing a hand. 
+Parmi les deux types de groupes, il est plus facile de compléter une suite que de compléter un brelan. Il n'y a que quatre tuiles identiques, et pour compléter un brelan, il faut collecter trois des quatre tuiles identiques. 
+C'est pourquoi nous donnons généralement la priorité aux suites plutôt qu'aux brelans lorsque nous développons une main. 
 
 \bigskip
 A pair of tiles that can become a run with one more tile is called a {\bf protorun} ({\jap taatsu}). There are three types of protoruns, summarized in Table \ref{tbl:proto}. 
@@ -328,9 +328,9 @@ What if a hand has three pairs? Suppose we draw {\LARGE\suo{6}}, as follows.
 \hfill\footnotesize{Draw~~~~~~~~~~~}
 \ep
 \end{itembox}
-\noindent If we keep the second {\LARGE\suo{6}} and discard the {\LARGE\suo{7}} or the {\LARGE\wan{5}}, the hand has three pairs. However, keeping three pairs in a hand is inefficient. Recall that each additional pair increases tile acceptance by two tiles. In this case, keeping a pair of {\LARGE\suo{6}} means that the hand can accept two additional tiles of {\LARGE\suo{6}}. However, doing so comes with a cost. Keeping three pairs by discarding the {\LARGE\suo{7}} means the hand can no longer accept {\LARGE\suo{5} \suo{8}} (2 kinds--8 tiles). The net tile acceptance gain will be negative ($2-8 = -6$). Similarly, keeping three pairs by discarding the {\LARGE\wan{5}} means the hand can no longer accept {\LARGE\wan{4}} (4 tiles). 
+\noindent If we keep the second {\LARGE\suo{6}} and discard the {\LARGE\suo{7}} or the {\LARGE\wan{5}}, the hand has three pairs. However, keeping three pairs in a hand is inefficient. Recall that each additional pair increases tile acceptance by two tiles. In this case, keeping a pair of {\LARGE\suo{6}} means that the hand can accept two additional tiles of {\LARGE\suo{6}}. However, doing so comes with a cost. Keeping three pairs by défausser the {\LARGE\suo{7}} means the hand can no longer accept {\LARGE\suo{5} \suo{8}} (2 kinds--8 tiles). The net tile acceptance gain will be negative ($2-8 = -6$). Similarly, keeping three pairs by défausser the {\LARGE\wan{5}} means the hand can no longer accept {\LARGE\wan{4}} (4 tiles). 
 %Again, the net tile acceptance gain is negative. 
-Therefore, discarding a {\LARGE\suo{6}} to maintain two pairs is the most efficient. 
+Therefore, défausser a {\LARGE\suo{6}} to maintain two pairs is the most efficient. 
 
 \bigskip
 What we have seen so far is generalizable beyond the current examples. As long as we intend to keep the hand closed (i.e., not calling {\jap pon} or {\jap chii}), we should avoid having three pairs in a hand. Having three pairs makes for the weakest form, whereas having two pairs makes for the strongest form.\footnote{What if there are four or more pairs? Whenever a hand has four pairs, it is 2-away from ready for {\jap chiitoitsu} (Seven Pairs). It may be faster to pursue {\jap chiitoitsu} than pursuing a standard hand in such cases.}
@@ -358,7 +358,7 @@ For example, consider the following hand.
 \vspace{-17pt}What would you discard? \vspace{-5pt}
 \end{itembox}
 \noindent
-We would definitely intend to call {\jap pon} on {\LARGE\zhong}. Anticipating that, we should discard {\LARGE\wan{5}} to keep three pairs in this case rather than discarding {\LARGE\wan{1}} to have two pairs. After calling {\jap pon} on {\LARGE\zhong}, we will have a choice between discarding  {\LARGE\wan{3}} or {\LARGE\suo{2}}.
+We would definitely intend to call {\jap pon} on {\LARGE\zhong}. Anticipating that, we should discard {\LARGE\wan{5}} to keep three pairs in this case rather than défausser {\LARGE\wan{1}} to have two pairs. After calling {\jap pon} on {\LARGE\zhong}, we will have a choice between défausser  {\LARGE\wan{3}} or {\LARGE\suo{2}}.
 \bp
 \wan{1}\wan{1}\tong{4}\tong{5}\suo{2}\suo{4}\suo{4}\suo{7}\suo{8}\suo{9}~\zhong\rzhong\zhong\\
 \wan{1}\wan{1}\wan{3}\tong{4}\tong{5}\suo{4}\suo{4}\suo{7}\suo{8}\suo{9}~\zhong\rzhong\zhong
@@ -414,7 +414,7 @@ Let's see some hand examples that illustrate how we can apply the tile efficienc
 The hand now has three pairs, and we should avoid it. In order to reduce the number of pairs in this hand from three to two, our discard candidates should be {\LARGE\wan{5}}, {\LARGE\suo{2}}, or {\LARGE\suo{8}}. Which one should we choose? 
 
 \bigskip
-Recall that a closed-wait protorun of 57 is stronger than a closed-wait protorun of 24 or an edge-wait protorun of 89. Therefore, it is OK to cut down the {\LARGE\wan{5}\wan{5}\wan{7}} shape to {\LARGE\wan{5}\wan{7}} by discarding {\LARGE\wan{5}}. This is because {\LARGE\wan{5}\wan{7}} can become a side-wait protorun relatively easily. On the other hand, the {\LARGE\suo{2}\suo{2}\suo{4}} shape and the {\LARGE\suo{8}\suo{8}\suo{9}} shape are both weak; the first can become a side-wait protorun only if we draw {\LARGE\suo{5}}, and the second one will never become a side-wait protorun in one step. Therefore, both {\LARGE\suo{2}\suo{2}\suo{4}} and {\LARGE\suo{8}\suo{8}\suo{9}} should be kept as a candidate for the head or a group rather than making them into weak closed-wait protoruns.
+Recall that a closed-wait protorun of 57 is stronger than a closed-wait protorun of 24 or an edge-wait protorun of 89. Therefore, it is OK to cut down the {\LARGE\wan{5}\wan{5}\wan{7}} shape to {\LARGE\wan{5}\wan{7}} by défausser {\LARGE\wan{5}}. This is because {\LARGE\wan{5}\wan{7}} can become a side-wait protorun relatively easily. On the other hand, the {\LARGE\suo{2}\suo{2}\suo{4}} shape and the {\LARGE\suo{8}\suo{8}\suo{9}} shape are both weak; the first can become a side-wait protorun only if we draw {\LARGE\suo{5}}, and the second one will never become a side-wait protorun in one step. Therefore, both {\LARGE\suo{2}\suo{2}\suo{4}} and {\LARGE\suo{8}\suo{8}\suo{9}} should be kept as a candidate for the head or a group rather than making them into weak closed-wait protoruns.
 
 \bigskip
 Let's say we discard {\LARGE\wan{5}}, and then we draw {\LARGE\wan{8}}, resulting in the following hand. 
@@ -499,7 +499,7 @@ Before drawing {\LARGE\tong{2}}, the hand was already in a very good shape. It w
 
 \bigskip
 Notice that, if we keep {\LARGE\tong{2}}, we have a double closed shape {\LARGE\tong{2}\tong{4}\tong{6}}. This is because the block {\LARGE\tong{2}\tong{4}\tong{5}\tong{6}\tong{6}\tong{7}} can be split into {\LARGE\tong{2}\tong{4}\tong{6}} and {\LARGE\tong{5}\tong{6}\tong{7}}. 
-If we keep {\LARGE\tong{2}} and discard {\LARGE\wan{5}}, the hand is still 1-away from ready, accepting {\LARGE\wan{3}\wan{6}\tong{3}\tong{5}\tong{8}} (5 kinds--19 tiles). The benefit of discarding {\LARGE\wan{5}} to keep the double closed shape is that the hand can \emph{always} be {\jap pinfu} when it is ready. On the other hand, discarding {\LARGE\tong{2}} means that the hand may become a {\jap yaku}-less hand when drawing {\LARGE\wan{5}} or {\LARGE\suo{7}}.
+If we keep {\LARGE\tong{2}} and discard {\LARGE\wan{5}}, the hand is still 1-away from ready, accepting {\LARGE\wan{3}\wan{6}\tong{3}\tong{5}\tong{8}} (5 kinds--19 tiles). The benefit of défausser {\LARGE\wan{5}} to keep the double closed shape is that the hand can \emph{always} be {\jap pinfu} when it is ready. On the other hand, défausser {\LARGE\tong{2}} means that the hand may become a {\jap yaku}-less hand when drawing {\LARGE\wan{5}} or {\LARGE\suo{7}}.
 
 \bigskip
 Double closed shapes are particularly useful when a hand is relatively far from ready (2-away or worse). As a hand advances, however, its usefulness diminishes because this block requires \underline{three} (not two) tiles even though it is not a complete group. 
@@ -555,7 +555,7 @@ Breaking a protorun plus one can be inefficient. For example, if we break a clos
 \vspace{-15pt}What would you discard? \vspace{-5pt}
 \end{itembox}
 \noindent
-Discarding {\LARGE\wan{5}} or {\LARGE\wan{7}} to break the protorun plus one {\LARGE\wan{5}\wan{5}\wan{7}} is inefficient here. Discarding {\LARGE\wan{5}} decreases tile acceptance by two, and discarding {\LARGE\wan{7}} decreases tile acceptance by four. Moreover, discarding {\LARGE\wan{7}} leaves three pairs in this hand, which should be avoided. Discarding {\LARGE\suo{9}} is much more efficient. 
+défausser {\LARGE\wan{5}} or {\LARGE\wan{7}} to break the protorun plus one {\LARGE\wan{5}\wan{5}\wan{7}} is inefficient here. défausser {\LARGE\wan{5}} decreases tile acceptance by two, and défausser {\LARGE\wan{7}} decreases tile acceptance by four. Moreover, défausser {\LARGE\wan{7}} leaves three pairs in this hand, which should be avoided. défausser {\LARGE\suo{9}} is much more efficient. 
 
 \bigskip
 
@@ -659,7 +659,7 @@ As we can see, the middle two ones --- 3456 and 4567 --- are the most versatile.
 
 \bigskip 
 \noindent
-It is true that discarding {\LARGE\wan{3}} or {\LARGE\wan{6}} would lead to the greatest tile acceptance (7 kinds--24 tiles) temporarily. However, doing so is too myopic. If we do that, all the remaining protoruns will be closed-wait or edge-wait ones. We should rather discard {\LARGE\suo{9}} to keep the 3456 shape, which we can expect to produce two side-wait protoruns later. The resulting tile acceptance (6 kinds--20 tiles) is not much smaller, either. 
+It is true that défausser {\LARGE\wan{3}} or {\LARGE\wan{6}} would lead to the greatest tile acceptance (7 kinds--24 tiles) temporarily. However, doing so is too myopic. If we do that, all the remaining protoruns will be closed-wait or edge-wait ones. We should rather discard {\LARGE\suo{9}} to keep the 3456 shape, which we can expect to produce two side-wait protoruns later. The resulting tile acceptance (6 kinds--20 tiles) is not much smaller, either. 
 
 \bigskip
 
@@ -687,7 +687,7 @@ With this in mind, consider the following 2-away hand.
 \ep
 \vspace{-10pt}What would you discard? \vspace{-5pt}
 \end{itembox}
-Discarding {\LARGE\wan{4}} to break the bulging float shape is not ideal. Although doing so increases tile acceptance temporarily, the hand will be filled with closed-wait protoruns. Alternatively, you should discard {\LARGE\suo{8}} to maintain the bulging float shape. 
+défausser {\LARGE\wan{4}} to break the bulging float shape is not ideal. Although doing so increases tile acceptance temporarily, the hand will be filled with closed-wait protoruns. Alternatively, you should discard {\LARGE\suo{8}} to maintain the bulging float shape. 
 
 \bigskip
 That being said, when this shape remains as is when a hand is ready, it does not make for a good wait. For example, consider the following ready hand. 
@@ -699,7 +699,7 @@ That being said, when this shape remains as is when a hand is ready, it does not
 \vspace{-15pt}What would you discard? \vspace{-5pt}
 \end{itembox}
 \noindent
-Discarding {\LARGE\bei} to keep the bulging float shape {\LARGE\wan{3}\wan{4}\wan{4}\wan{5}} makes the wait of this hand pretty bad. It is waiting for {\LARGE\wan{4}}, but we are already using two of it in the hand, leaving only two winning tiles. We should rather discard {\LARGE\wan{4}} to wait for {\LARGE\bei}. 
+défausser {\LARGE\bei} to keep the bulging float shape {\LARGE\wan{3}\wan{4}\wan{4}\wan{5}} makes the wait of this hand pretty bad. It is waiting for {\LARGE\wan{4}}, but we are already using two of it in the hand, leaving only two winning tiles. We should rather discard {\LARGE\wan{4}} to wait for {\LARGE\bei}. 
 
 \vfill
 \color{MyRed}

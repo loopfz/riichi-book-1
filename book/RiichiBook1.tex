@@ -1,6 +1,6 @@
 %Preamble ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+\begin{document}
 \documentclass{book}
-\input luatexja.sty
 \makeindex  %mendex RiichiBook1.idx
 	% Put "\thispagestyle{empty}" in RiichiBook1.ind
 % Font
@@ -12,6 +12,7 @@
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{graphicx, graphics,color,wrapfig,tikz} 
 \usepackage[abs]{overpic}
+\renewcommand\normalsize{\fontsize{10pt}{12pt}\selectfont}
 
 % FIXME: direct reference to dvipdfmx fails when building with lualatex
 % Seems fine without it. Assess impact ?
